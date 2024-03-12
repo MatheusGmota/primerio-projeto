@@ -1,35 +1,72 @@
 <!DOCTYPE html>
-<!-- instrução para que o computador identifique a versão HTML5 -->
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="container">
+      <header class="cabecalho">
+        <h1>Minha Página</h1>
 
-    <nav>
-      <ul>
-        <li><a href="#">item - 1</a></li>
-        <li><a href="#">item - 2</a></li>
-        <li><a href="#">item - 3</a></li>
-        <li><a href="#">item - 4</a></li>
-      </ul>
-    </nav>
+        <nav>
+          <ul>
+            <li><a href="#">Ajuda</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </nav>
+      </header>
 
-    <header>
-      <nav>
-        <ul>
-          <li href="#">item - 1</li>
-          <li href="#">item - 2</li>
-          <li href="#">item - 3</li>
-          <li href="#">item - 4</li>
-        </ul>
-      </nav>
-    </header>
-
+      <section>
+        <div>
+          <h2>Ajuda</h2>
+          <p>
+            <span>AJUDA</span>Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Officia doloribus fugiat dolorem consequuntur vel
+            non necessitatibus velit, beatae tempore, voluptatum eveniet, eaque
+            aliquam numquam atque vitae tempora culpa corrupti in!
+          </p>
+          <a href="#">Mais...</a>
+        </div>
+        <div>
+          <h2>Sobre</h2>
+          <p>
+            <span>SOBRE</span>Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Officia doloribus fugiat dolorem consequuntur vel
+            non necessitatibus velit, beatae tempore, voluptatum eveniet, eaque
+            aliquam numquam atque vitae tempora culpa corrupti in!
+          </p>
+          <a href="#">Mais...</a>
+        </div>
+        <div>
+          <h2>Contato</h2>
+          <form>
+            <fieldset>
+              <legend>Contato</legend>
+              <div>
+                <label for="idEmail">Email</label>
+                <input
+                  type="email"
+                  name="txtEmail"
+                  id="idEmail"
+                  placeholder="Digite seu e-mail"
+                />
+              </div>
+              <div>
+                <label for="idTel">Telefone</label>
+                <input
+                  type="tel"
+                  name="txtTel"
+                  id="idTel"
+                  placeholder="Digite seu telefone"
+                />
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </section>
+    </div>
   </body>
-  <script src="script.js"></script>
 </html>
